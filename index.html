@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Record Management (TRM) — Enterprise Java Desktop Solution</title>
+  <meta name="description" content="A premium Java Swing and MySQL-based desktop application for secure, efficient, and robust tax record tracking, management, and CSV reporting.">
+  
+  <!-- Google Fonts - Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Decors -->
+  <div class="ambient-glow bg-glow-1" id="glow-1"></div>
+  <div class="ambient-glow bg-glow-2" id="glow-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="app-header" id="main-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" id="logo-link">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">TRM System</span>
+      </a>
+      <nav class="nav-menu" id="nav-bar">
+        <a href="#overview" class="nav-link" id="link-overview">Overview</a>
+        <a href="#features" class="nav-link" id="link-features">Features</a>
+        <a href="#gallery" class="nav-link" id="link-gallery">Screenshots</a>
+        <a href="#setup" class="nav-link" id="link-setup">Setup Guide</a>
+      </nav>
+      <div class="header-cta">
+        <a href="https://github.com/sujalashish/Tax-Record-Management" target="_blank" class="btn btn-secondary btn-sm" id="btn-github-header">
+          <span>View GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge" id="hero-badge">Java Swing &amp; MySQL Desktop App</div>
+        <h1 class="hero-title" id="main-title">Tax Record Management System</h1>
+        <p class="hero-subtitle" id="main-subtitle">
+          An enterprise-grade desktop utility architected in Java, featuring secure administrator authentication, relational database storage, and optimized CSV data export capabilities.
+        </p>
+        <div class="hero-actions" id="hero-buttons">
+          <a href="#setup" class="btn btn-primary" id="btn-hero-setup">Get Started</a>
+          <a href="#gallery" class="btn btn-secondary" id="btn-hero-gallery">Browse Screens</a>
+        </div>
+      </div>
+      <div class="hero-preview" id="hero-showcase">
+        <div class="preview-window">
+          <div class="window-bar win-bar">
+            <span class="window-title">TRM - Taxpayer Dashboard</span>
+            <div class="win-controls">
+              <span class="win-btn minimize">&#x2014;</span>
+              <span class="win-btn maximize">☐</span>
+              <span class="win-btn close">✕</span>
+            </div>
+          </div>
+          <img src="images/trm_dashboard.png" alt="Tax Record Management Dashboard" class="preview-img" id="hero-dashboard-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Highlights / Overview -->
+  <section class="overview-section" id="overview">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Engineered for Accuracy &amp; Speed</h2>
+        <p class="section-subtitle">TRM leverages a robust desktop architecture to deliver responsive performance and native system integration.</p>
+      </div>
+      
+      <div class="highlights-grid" id="highlights-container">
+        <div class="highlight-card" id="card-speed">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">Native Performance</h3>
+          <p class="card-desc">Compiled on the Java 26 platform utilizing Swing GUI frameworks for snappy layout execution and low memory consumption.</p>
+        </div>
+        <div class="highlight-card" id="card-security">
+          <div class="card-icon">🔒</div>
+          <h3 class="card-title">Secure Authentication</h3>
+          <p class="card-desc">Multi-layer credential checks and administrator verification forms ensure local data boundaries are fully protected.</p>
+        </div>
+        <div class="highlight-card" id="card-db">
+          <div class="card-icon">🗄️</div>
+          <h3 class="card-title">Relational Storage</h3>
+          <p class="card-desc">Powered by MySQL Connector/J for robust transactional processing, maintaining structural integrity for all taxpayer records.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="features-section" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Enterprise System Features</h2>
+        <p class="section-subtitle">A closer look at the built-in services engineered inside the Tax Record Management system.</p>
+      </div>
+
+      <div class="features-list" id="features-container">
+        <div class="feature-item">
+          <div class="feature-content">
+            <span class="feature-num">01</span>
+            <h3 class="feature-name">Comprehensive CRUD Interface</h3>
+            <p class="feature-text">
+              Easily catalog, update, browse, and delete tax profiles. The dynamic forms perform real-time verification of critical values such as PAN numbers, phone digits, and financial figures.
+            </p>
+          </div>
+          <div class="feature-visual">
+            <img src="images/trm_add_record.png" alt="Add Tax Record Interface" class="feature-img" id="img-feature-crud">
+          </div>
+        </div>
+
+        <div class="feature-item reverse">
+          <div class="feature-content">
+            <span class="feature-num">02</span>
+            <h3 class="feature-name">Export &amp; Reporting Engine</h3>
+            <p class="feature-text">
+              Convert raw database inputs into standardized, clean CSV sheets instantly. The system utilizes Swing File Choosers to let administrators map directory paths and save records offline with a single click.
+            </p>
+          </div>
+          <div class="feature-visual">
+            <img src="images/trm_view_records.png" alt="View Tax Records Table" class="feature-img" id="img-feature-reporting">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Screenshot Gallery -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Application Interface Gallery</h2>
+        <p class="section-subtitle">Select an interface tab below to view screenshots of the live Java Swing desktop application.</p>
+      </div>
+
+      <div class="gallery-container">
+        <!-- Tabs Selector -->
+        <div class="gallery-tabs" id="gallery-tabs-list">
+          <button class="gallery-tab active" data-img="images/trm_login.png" id="tab-login">Login</button>
+          <button class="gallery-tab" data-img="images/trm_register.png" id="tab-register">Registration</button>
+          <button class="gallery-tab" data-img="images/trm_admin_details.png" id="tab-admin">Admin Profile</button>
+          <button class="gallery-tab" data-img="images/trm_dashboard.png" id="tab-dashboard">Dashboard</button>
+          <button class="gallery-tab" data-img="images/trm_add_record.png" id="tab-add">Add Record</button>
+          <button class="gallery-tab" data-img="images/trm_view_records.png" id="tab-view">View Records</button>
+          <button class="gallery-tab" data-img="images/trm_update_record.png" id="tab-update">Update Record</button>
+          <button class="gallery-tab" data-img="images/trm_delete_record.png" id="tab-delete">Delete Record</button>
+        </div>
+
+        <!-- Showcase Image Window -->
+        <div class="gallery-window" id="gallery-image-viewport">
+          <div class="window-bar win-bar">
+            <span class="window-title" id="gallery-window-title">trm_login.png</span>
+            <div class="win-controls">
+              <span class="win-btn minimize">&#x2014;</span>
+              <span class="win-btn maximize">☐</span>
+              <span class="win-btn close">✕</span>
+            </div>
+          </div>
+          <div class="gallery-display">
+            <img src="images/trm_login.png" alt="Active App Screen" class="gallery-img" id="gallery-showcase-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Setup & Installation Guide -->
+  <section class="setup-section" id="setup">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Developer Setup &amp; Running Guide</h2>
+        <p class="section-subtitle">Follow these quick commands to build and run the desktop app locally on your machine.</p>
+      </div>
+
+      <div class="setup-layout" id="setup-steps-layout">
+        <div class="setup-steps">
+          <div class="step-card" id="step-1">
+            <div class="step-num">1</div>
+            <div class="step-details">
+              <h4>Install Prerequisites</h4>
+              <p>Ensure you have **Java JDK 26** and **Maven** installed, along with a running instance of **MySQL Server**.</p>
+            </div>
+          </div>
+          <div class="step-card" id="step-2">
+            <div class="step-num">2</div>
+            <div class="step-details">
+              <h4>Database Schema Setup</h4>
+              <p>Create a database named `trm_db` in MySQL and configure user credentials inside the `DBConnection.java` configuration class.</p>
+            </div>
+          </div>
+          <div class="step-card" id="step-3">
+            <div class="step-num">3</div>
+            <div class="step-details">
+              <h4>Compile &amp; Exec</h4>
+              <p>Run the Maven compilation cycle and launch the main class using the execution script configuration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-terminal" id="terminal-view">
+          <div class="terminal-header win-bar">
+            <span class="terminal-title">PowerShell — TRM_Sujal</span>
+            <div class="win-controls">
+              <span class="win-btn minimize">&#x2014;</span>
+              <span class="win-btn maximize">☐</span>
+              <span class="win-btn close">✕</span>
+            </div>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line"><span class="prompt">PS&gt;</span> git clone https://github.com/sujalashish/Tax-Record-Management.git</p>
+            <p class="terminal-line"><span class="prompt">PS&gt;</span> cd Tax-Record-Management</p>
+            <p class="terminal-line"><span class="prompt">PS&gt;</span> mvn clean compile</p>
+            <p class="terminal-line"><span class="prompt">PS&gt;</span> mvn exec:java</p>
+            <p class="terminal-output">[INFO] Scanning for projects...</p>
+            <p class="terminal-output">[INFO] Building TRM_Sujal 1.0-SNAPSHOT...</p>
+            <p class="terminal-output">[INFO] Database Connected Successfully!</p>
+            <p class="terminal-output">[INFO] Launching Tax Record Management Dashboard...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="app-footer" id="main-footer">
+    <div class="footer-container">
+      <p class="copyright-text">&copy; 2026 Sujal Ashish. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/sujalashish" target="_blank" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/sujal-ashish" target="_blank" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Gallery Logic JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.gallery-tab');
+      const showcaseImg = document.getElementById('gallery-showcase-img');
+      const windowTitle = document.getElementById('gallery-window-title');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Deactivate active tabs
+          tabs.forEach(t => t.classList.remove('active'));
+          
+          // Activate current tab
+          tab.classList.add('active');
+          
+          // Change display image
+          const newImgPath = tab.getAttribute('data-img');
+          showcaseImg.src = newImgPath;
+          
+          // Change viewport header name
+          const fileName = newImgPath.substring(newImgPath.lastIndexOf('/') + 1);
+          windowTitle.innerText = fileName;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
