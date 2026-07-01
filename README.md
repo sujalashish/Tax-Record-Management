@@ -1,6 +1,6 @@
 # Tax Record Management (TRM) System
 
-🔗 **[Live Demo](https://sujalashish.github.io/Tax-Record-Management/)** &nbsp;|&nbsp; 📦 **[GitHub Repository](https://github.com/sujalashish/Tax-Record-Management)**
+🔗 **[Live Demo](https://sujalashish.github.io/Tax-Record-Management/)**
 
 TRM is a Java Swing enterprise desktop application designed for secure, efficient tax record tracking and management. Built on a modular **DAO (Data Access Object)** architecture, the system provides administrators with a complete CRUD (Create, Read, Update, Delete) interface to organize taxpayer profiles, track payment statuses, and export reports directly to local CSV files.
 
